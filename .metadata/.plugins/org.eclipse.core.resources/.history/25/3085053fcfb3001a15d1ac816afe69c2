@@ -1,0 +1,11 @@
+package br.com.teste.es.itau.beans;
+
+import org.springframework.context.annotation.Bean;
+
+public class RestTemplate {
+
+	@Bean
+	public RestTemplate getRestTemplateInstance() {
+		return new RestTemplate();
+	}
+}

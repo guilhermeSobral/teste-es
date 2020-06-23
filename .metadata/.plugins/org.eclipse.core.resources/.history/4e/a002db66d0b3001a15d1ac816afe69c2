@@ -1,0 +1,18 @@
+package br.com.teste.es.itau.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.teste.es.itau.services.CepService;
+
+@RestController
+@RequestMapping("/cep")
+public class CepController {
+	
+	@Autowired
+	private CepService service;
+	
+	
+
+}

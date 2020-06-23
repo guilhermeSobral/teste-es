@@ -1,0 +1,33 @@
+package br.com.teste.es.itau.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.teste.es.itau.entities.InfoCep;
+import br.com.teste.es.itau.services.CepService;
+
+@RestController
+@RequestMapping("/cep")
+public class CepController {
+	
+	@Autowired
+	private CepService service;
+	
+	@GetMapping
+	public ResponseEntity<InfoCep> getInfoCep(@RequestParam("cep") String cep) {
+		InfoCep obj = service.retriveInfoCep(cep);
+		return ResponseEntity.ok().body(obj);
+	}
+	
+	@GetMapping("/teste")
+	public String hello() {
+		return "Hello Gateway";
+	}
+	
+	
+
+}

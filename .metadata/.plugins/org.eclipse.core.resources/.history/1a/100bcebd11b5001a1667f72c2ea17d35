@@ -1,0 +1,7 @@
+package br.com.teste.es.itau.auth.server;
+
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+public class WebSegurityConfig extends WebSecurityConfigurerAdapter {
+
+}

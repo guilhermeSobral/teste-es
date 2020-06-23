@@ -1,0 +1,5 @@
+package br.com.teste.es.itau.repositories;
+
+public interface CepRepository {
+
+}

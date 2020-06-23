@@ -1,0 +1,5 @@
+package br.com.teste.es.itau.security;
+
+public class ResourceServerConfig {
+
+}
